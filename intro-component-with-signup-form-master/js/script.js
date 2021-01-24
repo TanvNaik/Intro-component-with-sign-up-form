@@ -61,7 +61,7 @@ submit.addEventListener("click", (e) => {
 const error = (element, msg) => {
 	element.parentNode.classList.add("error");
 	element.insertAdjacentHTML("afterend", msg);
-	if (window.matchMedia("(max-width:1080px)").matches) {
+	if (window.matchMedia("(max-width:480px)").matches) {
 		document.querySelector(".section2").style.paddingBottom = "30%";
 	} else {
 		document.querySelector(".section2").style.paddingBottom = "12%";
