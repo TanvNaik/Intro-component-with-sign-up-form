@@ -36,7 +36,7 @@ submit.addEventListener("click", (e) => {
 		const err = `<br><span><i><b>Email cannot be empty!</b></i></span>`;
 		error(email, err);
 		errors += 1;
-	} else if (email_re.test(email)) {
+	} else if (!email_re.test(email)) {
 		e.preventDefault();
 		const err = `<br><span><i><b>Looks like this is not an email</b></i></span>`;
 		email.value = "";
